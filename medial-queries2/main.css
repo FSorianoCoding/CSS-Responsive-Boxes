@@ -1,3 +1,87 @@
 body {
   background: papayawhip;
 }
+
+/*********************************
+ * Build Helpers
+ *********************************/
+/* give each element a border */
+* {
+  border: 1px solid mediumvioletred;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  flex-grow: 1;
+  margin: 1em;
+}
+
+main {
+  min-height: 60vh;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div[class$='row'] {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 1em;
+}
+
+.top-row {
+  width: 100%;
+  flex-grow: 2;
+  }
+
+.top-row .b {
+  width: 100%;
+  min-height: 100%;
+}
+
+.bottom-row {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+}
+
+.bottom-row .c, .bottom-row .d, .bottom-row .e {
+  width: 33%;
+  min-height: 100%;
+}
+
+.f {
+  flex-grow: 1;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main {
+    flex-grow: 4;
+  }
+  .a {
+    width: 100%;
+  }
+  .f {
+    flex-grow: 1;
+  }
+  .top-row {
+    flex-grow: 1;
+  }
+  .bottom-row {
+    flex-grow: 1
+  }
+
+}  
