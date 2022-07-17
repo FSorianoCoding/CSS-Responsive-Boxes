@@ -22,3 +22,6 @@ Take these designs and make them into a simple website!
 ### Media Query 3
 
 ![](./imgs/r3.png)
+
+
+Pages link: https://fsorianocoding.github.io/CSS-Responsive-Boxes/
