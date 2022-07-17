@@ -68,12 +68,17 @@ div[class$='row'] {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  main {
-    flex-grow: 4;
-  }
+  
   .a {
     width: 100%;
+
   }
+  
+  main {
+    flex-grow: 4;
+    min-height: 33vh;
+  }
+  
   .f {
     flex-grow: 1;
   }
