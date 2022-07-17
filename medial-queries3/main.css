@@ -1,3 +1,93 @@
 body {
   background: peachpuff;
 }
+
+/*********************************
+ * Build Helpers
+ *********************************/
+/* give each element a border */
+* {
+  border: 1px solid mediumvioletred;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  flex-grow: .75;
+  margin: 5px;
+}
+
+main {
+  flex-grow: 2;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+ 
+div[class$='row'] {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.top-row {
+  display: flex;
+  flex-grow: 1;
+  }
+
+.top-row .b, .top-row .c, .top-row .d {
+  width: 100%;
+  margin: 5px;
+}
+
+.bottom-row {
+  flex-grow: 1;
+  display: flex;
+}
+
+.bottom-row .e, .bottom-row .f, .bottom-row .g {
+  width: 100%;
+  margin: 5px;
+}
+
+.h {
+  flex-grow: 2;
+  margin: 5px;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .a {
+    width: 100%;
+
+  }
+  
+  main {
+    flex-grow: 4;
+    min-height: 33vh;
+  }
+  
+  .h {
+    flex-grow: 1;
+  }
+  .top-row {
+    flex-grow: 1;
+  }
+
+  .bottom-row {
+    flex-grow: 1
+  }
+
+}

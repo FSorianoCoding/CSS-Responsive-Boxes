@@ -17,10 +17,18 @@ body {
   justify-content: space-between;
 }
 
+/*********************************
+ Header
+ *********************************/
+
 .a {
   flex-grow: 1;
   margin: 1em;
 }
+
+/*********************************
+ Main
+ *********************************/
 
 main {
   min-height: 60vh;
@@ -37,6 +45,10 @@ div[class$='row'] {
   margin-bottom: 1em;
 }
 
+/*********************************
+ Top Row of Main
+ *********************************/
+
 .top-row {
   width: 100%;
   flex-grow: 2;
@@ -46,6 +58,10 @@ div[class$='row'] {
   width: 100%;
   display: block;
 }
+
+/*********************************
+ Bottom Row of Main
+ *********************************/
 
 .bottom-row {
   flex-grow: 1;
@@ -58,10 +74,18 @@ div[class$='row'] {
   min-height: 100%;
 }
 
+/*********************************
+ Aside or just F
+ *********************************/
+
 .f {
   flex-grow: 1;
   margin: 1em;
 }
+
+/*********************************
+ * Min Resolution Window
+ *********************************/
 
 @media (min-width: 600px) {
   .container {
