@@ -1,3 +1,48 @@
 body {
   background: blanchedalmond;
 }
+
+/*********************************
+ * Build Helpers
+ *********************************/
+/* give each element a border */
+* {
+    border: 1px solid mediumvioletred;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a {
+  flex-grow: 1;
+  margin: 1em;
+}
+
+.b {
+  min-height: 60vh;
+  flex-grow: 4;
+  margin: 1em;
+}
+
+.c {
+    flex-grow: 1;
+    margin: 1em;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .b {
+    max-width: 80%;
+  }
+  .a {
+    width: 100%;
+  }
+}  
