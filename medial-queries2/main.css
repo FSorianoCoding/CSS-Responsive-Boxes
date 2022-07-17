@@ -32,7 +32,7 @@ main {
 
 div[class$='row'] {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: space-between; */
   margin-bottom: 1em;
 }
@@ -44,7 +44,7 @@ div[class$='row'] {
 
 .top-row .b {
   width: 100%;
-  min-height: 100%;
+  display: block;
 }
 
 .bottom-row {
@@ -80,6 +80,7 @@ div[class$='row'] {
   .top-row {
     flex-grow: 1;
   }
+
   .bottom-row {
     flex-grow: 1
   }
